@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Frame-Three-Pigs</title>
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+</head>
+<body>
+    
+
+    <!--To use textures, close the editor, then open the ENTIRE folder that you are working in (not just the assets folder) -->
+
+    <a-assets>
+        <img id="grass" src="assets/grass.jpg">
+        <img id="bricks" src="assets/bricks.jpg">
+        <img id="window" src="assets/window.jpg">
+        <img id="wheat" src="assets/wheat.png">
+        <img id="sky" src="assets/stars.jpg">
+        <img id="sticks" src="assets/sticks.jpg">
+        <img id="fire-place" src="assets/fireplace.png">
+        <img id="black-stone" src="assets/black-stone.jpg">
+        <img id="pig" src="assets/cartoonpig.jpg">
+        <img id="wolf" src="assets/cartoon-wolf.jpg">
+        <img id="picture-frame" src="assets/pictureframe.jpg">
+        <img id="porky" src="assets/porky-pig (creative commons).jpg">
+
+        
+    </a-assets>
+
+    <a-scene>
+        <a-sky src="#sky"></a-sky>
+
+
+
+
+
+
+<!--First House-->
+
+<!--Front Boxes-->
+        <a-box 
+            position="-6 .1 -40" 
+            rotation="0 0 0" 
+            src="#sticks"
+            width="8" height="10" 
+            shadow>
+
+            <a-box 
+                position="11 0 0" 
+                rotation="0 0 0" 
+                src="#sticks"
+                width="8" height="10" 
+                shadow>
+            </a-box>
+<!--Bar in front of house-->
+            <a-box 
+                position="5.5 4.5 0" 
+                rotation="0 0 0" 
+                src="#sticks"
+                width="3" height="1" 
+                shadow>
+            </a-box>
+            
+            
+            
+<!--Walls-->
+            <!--Right wall-->
+
+            <a-box 
+                position="14.5 0 -6" 
+                rotation="0 90 0" 
+                src="#sticks"
+                width="11" height="10" 
+                shadow>
+            </a-box>
+
+            <a-box 
+                position="-3.5 0 -6" 
+                rotation="0 90 0" 
+                src="#sticks"
+                width="11" height="10" 
+                shadow>
+            </a-box>
+
+            <a-box 
+                position="5.5 0 -12" 
+                rotation="0 0 0" 
+                src="#sticks"
+                width="19" height="10" 
+                shadow>
+            </a-box>
+
+            <a-box 
+                position="5.5 4.5 -6.4" 
+                rotation="90 0 0" 
+                src="#sticks"
+                width="17" height="11.8" 
+                shadow>
+            </a-box>
+
+            <!--Roof-->
+
+            <!--Right-->
+            <a-box 
+                position="11.5 7 -6" 
+                src="#sticks"
+                rotation="125 90 0" 
+                width="15" height="15" 
+                shadow>
+            </a-box>
+
+
+            <!--Left-->
+            <a-box 
+                position="-.5 7 -6" 
+                src="#sticks"
+                rotation="55 90 0" 
+                width="15" height="15" 
+                shadow>
+            </a-box>
+
+            <!--Walls that block view through roof-->
+
+            <!--Front-->
+            <a-box 
+                position=".4 5.75 0" 
+                src="#sticks"
+                rotation="0 0 0" 
+                width="5" height="1.5" 
+                shadow>
+
+                <a-box 
+                position="5 0 0" 
+                src="#sticks"
+                rotation="0 0 0" 
+                width="5" height="1.5" 
+                shadow>
+                </a-box>
+
+                <a-box 
+                position="10 0 0" 
+                src="#sticks"
+                rotation="0 0 0" 
+                width="5" height="1.5" 
+                shadow>
+                </a-box>
+
+                <a-box 
+                position="12.95 -.25 0" 
+                src="#sticks"
+                rotation="0 0 0" 
+                width=".9" height="1" 
+                shadow>
+                </a-box>
+
+            <!--Second Layer-->
+
+                <a-box 
+                position="2.5 1.5 0" 
+                src="#sticks"
+                rotation="0 0 0" 
+                width="5" height="1.5" 
+                shadow>
+
+                    <a-box 
+                    position="5 0 0" 
+                    src="#sticks"
+                    rotation="0 0 0" 
+                    width="5" height="1.5" 
+                    shadow>
+                    </a-box>
+
+                    <a-box 
+                    position="-3 -.2 0" 
+                    src="#sticks"
+                    rotation="0 0 0" 
+                    width="1" height="1" 
+                    shadow>
+                    </a-box>
+
+                    <a-box 
+                    position="8 -.2 0" 
+                    src="#sticks"
+                    rotation="0 0 0" 
+                    width="1" height="1" 
+                    shadow>
+                    </a-box>
+
+                </a-box>
+                
+                <a-box 
+                    position="5.1 2.2 -.1" 
+                    src="#sticks"
+                    rotation="0 0 45" 
+                    scale=".98 1.05 1"
+                    width="5" height="5" 
+                    shadow>
+                </a-box>
+                
+
+            </a-box>
+
+            
+
+             <!--Walls that block view through roof-->
+
+            <!--Back-->
+            <a-box 
+                position=".4 5.75 -12" 
+                src="#sticks"
+                rotation="0 0 0" 
+                width="5" height="1.5" 
+                shadow>
+
+                <a-box 
+                position="5 0 0" 
+                src="#sticks"
+                rotation="0 0 0" 
+                width="5" height="1.5" 
+                shadow>
+                </a-box>
+
+                <a-box 
+                position="10 0 0" 
+                src="#sticks"
+                rotation="0 0 0" 
+                width="5" height="1.5" 
+                shadow>
+                </a-box>
+
+                <a-box 
+                position="12.95 -.25 0" 
+                src="#sticks"
+                rotation="0 0 0" 
+                width=".9" height="1" 
+                shadow>
+                </a-box>
+
+            <!--Second Layer-->
+
+                <a-box 
+                position="2.5 1.5 0" 
+                src="#sticks"
+                rotation="0 0 0" 
+                width="5" height="1.5" 
+                shadow>
+
+                    <a-box 
+                    position="5 0 0" 
+                    src="#sticks"
+                    rotation="0 0 0" 
+                    width="5" height="1.5" 
+                    shadow>
+                    </a-box>
+
+                    <a-box 
+                    position="-3 -.2 0" 
+                    src="#sticks"
+                    rotation="0 0 0" 
+                    width="1" height="1" 
+                    shadow>
+                    </a-box>
+
+                    <a-box 
+                    position="8 -.2 0" 
+                    src="#sticks"
+                    rotation="0 0 0" 
+                    width="1" height="1" 
+                    shadow>
+                    </a-box>
+
+                </a-box>
+                
+                <a-box 
+                    position="5.1 2.2 .1" 
+                    src="#sticks"
+                    rotation="0 0 45" 
+                    scale=".98 1.05 1"
+                    width="5" height="5" 
+                    shadow>
+                </a-box>
+                
+
+            </a-box>
+
+
+        </a-box>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Second House-->
+
+<!--Front Boxes-->
+<a-box 
+    position="-25 .1 -25" 
+    rotation="0 65 0" 
+    src="#wheat"
+    width="8" height="10" 
+    shadow>
+
+    <a-box 
+        position="11 0 0" 
+        rotation="0 0 0" 
+        src="#wheat"
+        width="8" height="10" 
+        shadow>
+    </a-box>
+<!--Bar in front of house-->
+    <a-box 
+        position="5.5 4.5 0" 
+        rotation="0 0 0" 
+        src="#wheat"
+        width="3" height="1" 
+        shadow>
+    </a-box>
+    
+    
+    
+<!--Walls-->
+    <!--Right wall-->
+
+    <a-box 
+        position="14.5 0 -6" 
+        rotation="0 90 0" 
+        src="#wheat"
+        width="11" height="10" 
+        shadow>
+    </a-box>
+
+    <a-box 
+        position="-3.5 0 -6" 
+        rotation="0 90 0" 
+        src="#wheat"
+        width="11" height="10" 
+        shadow>
+    </a-box>
+
+    <a-box 
+        position="5.5 0 -12" 
+        rotation="0 0 0" 
+        src="#wheat"
+        width="19" height="10" 
+        shadow>
+    </a-box>
+
+    <a-box 
+        position="5.5 4.5 -6.4" 
+        rotation="90 0 0" 
+        src="#wheat"
+        width="17" height="11.8" 
+        shadow>
+    </a-box>
+
+    <!--Roof-->
+
+    <!--Right-->
+    <a-box 
+        position="11.5 7 -6" 
+        src="#wheat"
+        rotation="125 90 0" 
+        width="15" height="15" 
+        shadow>
+    </a-box>
+
+
+    <!--Left-->
+    <a-box 
+        position="-.5 7 -6" 
+        src="#wheat"
+        rotation="55 90 0" 
+        width="15" height="15" 
+        shadow>
+    </a-box>
+
+    <!--Walls that block view through roof-->
+
+    <!--Front-->
+    <a-box 
+        position=".4 5.75 0" 
+        src="#wheat"
+        rotation="0 0 0" 
+        width="5" height="1.5" 
+        shadow>
+
+        <a-box 
+        position="5 0 0" 
+        src="#wheat"
+        rotation="0 0 0" 
+        width="5" height="1.5" 
+        shadow>
+        </a-box>
+
+        <a-box 
+        position="10 0 0" 
+        src="#wheat"
+        rotation="0 0 0" 
+        width="5" height="1.5" 
+        shadow>
+        </a-box>
+
+        <a-box 
+        position="12.95 -.25 0" 
+        src="#wheat"
+        rotation="0 0 0" 
+        width=".9" height="1" 
+        shadow>
+        </a-box>
+
+    <!--Second Layer-->
+
+        <a-box 
+        position="2.5 1.5 0" 
+        src="#wheat"
+        rotation="0 0 0" 
+        width="5" height="1.5" 
+        shadow>
+
+            <a-box 
+            position="5 0 0" 
+            src="#wheat"
+            rotation="0 0 0" 
+            width="5" height="1.5" 
+            shadow>
+            </a-box>
+
+            <a-box 
+            position="-3 -.2 0" 
+            src="#wheat"
+            rotation="0 0 0" 
+            width="1" height="1" 
+            shadow>
+            </a-box>
+
+            <a-box 
+            position="8 -.2 0" 
+            src="#wheat"
+            rotation="0 0 0" 
+            width="1" height="1" 
+            shadow>
+            </a-box>
+
+        </a-box>
+        
+        <a-box 
+            position="5.1 2.2 -.1" 
+            src="#wheat"
+            rotation="0 0 45" 
+            scale=".98 1.05 1"
+            width="5" height="5" 
+            shadow>
+        </a-box>
+        
+
+    </a-box>
+
+    
+
+     <!--Walls that block view through roof-->
+
+    <!--Back-->
+    <a-box 
+        position=".4 5.75 -12" 
+        src="#wheat"
+        rotation="0 0 0" 
+        width="5" height="1.5" 
+        shadow>
+
+        <a-box 
+        position="5 0 0" 
+        src="#wheat"
+        rotation="0 0 0" 
+        width="5" height="1.5" 
+        shadow>
+        </a-box>
+
+        <a-box 
+        position="10 0 0" 
+        src="#wheat"
+        rotation="0 0 0" 
+        width="5" height="1.5" 
+        shadow>
+        </a-box>
+
+        <a-box 
+        position="12.95 -.25 0" 
+        src="#wheat"
+        rotation="0 0 0" 
+        width=".9" height="1" 
+        shadow>
+        </a-box>
+
+    <!--Second Layer-->
+
+        <a-box 
+        position="2.5 1.5 0" 
+        src="#wheat"
+        rotation="0 0 0" 
+        width="5" height="1.5" 
+        shadow>
+
+            <a-box 
+            position="5 0 0" 
+            src="#wheat"
+            rotation="0 0 0" 
+            width="5" height="1.5" 
+            shadow>
+            </a-box>
+
+            <a-box 
+            position="-3 -.2 0" 
+            src="#wheat"
+            rotation="0 0 0" 
+            width="1" height="1" 
+            shadow>
+            </a-box>
+
+            <a-box 
+            position="8 -.2 0" 
+            src="#wheat"
+            rotation="0 0 0" 
+            width="1" height="1" 
+            shadow>
+            </a-box>
+
+        </a-box>
+        
+        <a-box 
+            position="5.1 2.2 .1" 
+            src="#wheat"
+            rotation="0 0 45" 
+            scale=".98 1.05 1"
+            width="5" height="5" 
+            shadow>
+        </a-box>
+        
+
+    </a-box>
+
+
+</a-box>
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Third House-->
+
+<!--Front Boxes-->
+<a-box 
+    position="19 .1 -35" 
+    rotation="0 295 0"  
+    src="#bricks"
+    width="8" height="10" 
+    shadow>
+
+    <a-box 
+        position="11 0 0" 
+        rotation="0 0 0" 
+        src="#bricks"
+        width="8" height="10" 
+        shadow>
+    </a-box>
+<!--Bar in front of house-->
+    <a-box 
+        position="5.5 4.5 0" 
+        rotation="0 0 0" 
+        src="#black-stone"
+        width="3" height="1" 
+        shadow>
+    </a-box>
+    
+    
+    
+<!--Walls-->
+    <!--Right wall-->
+
+    <a-box 
+        position="14.5 0 -6" 
+        rotation="0 90 0" 
+        src="#bricks"
+        width="11" height="10" 
+        shadow>
+    </a-box>
+
+    <a-box 
+        position="-3.5 0 -6" 
+        rotation="0 90 0" 
+        src="#bricks"
+        width="11" height="10" 
+        shadow>
+    </a-box>
+
+    <a-box 
+        position="5.5 0 -12" 
+        rotation="0 0 0" 
+        src="#bricks"
+        width="19" height="10" 
+        shadow>
+    </a-box>
+
+    <a-box 
+        position="5.5 4.5 -6.4" 
+        rotation="90 0 0" 
+        src="#black-stone"
+        width="17" height="11.8" 
+        shadow>
+    </a-box>
+
+    <!--Roof-->
+
+    <!--Right-->
+    <a-box 
+        position="11.5 7 -6" 
+        src="#black-stone"
+        rotation="125 90 0" 
+        width="15" height="15" 
+        shadow>
+    </a-box>
+
+
+    <!--Left-->
+    <a-box 
+        position="-.5 7 -6" 
+        src="#black-stone"
+        rotation="55 90 0" 
+        width="15" height="15" 
+        shadow>
+    </a-box>
+
+    <!--Walls that block view through roof-->
+
+    <!--Front-->
+    <a-box 
+        position=".4 5.75 0" 
+        src="#black-stone"
+        rotation="0 0 0" 
+        width="5" height="1.5" 
+        shadow>
+
+        <a-box 
+        position="5 0 0" 
+        src="#black-stone"
+        rotation="0 0 0" 
+        width="5" height="1.5" 
+        shadow>
+        </a-box>
+
+        <a-box 
+        position="10 0 0" 
+        src="#black-stone"
+        rotation="0 0 0" 
+        width="5" height="1.5" 
+        shadow>
+        </a-box>
+
+        <a-box 
+        position="12.95 -.25 0" 
+        src="#black-stone"
+        rotation="0 0 0" 
+        width=".9" height="1" 
+        shadow>
+        </a-box>
+
+    <!--Second Layer-->
+
+        <a-box 
+        position="2.5 1.5 0" 
+        src="#black-stone"
+        rotation="0 0 0" 
+        width="5" height="1.5" 
+        shadow>
+
+            <a-box 
+            position="5 0 0" 
+            src="#black-stone"
+            rotation="0 0 0" 
+            width="5" height="1.5" 
+            shadow>
+            </a-box>
+
+            <a-box 
+            position="-3 -.2 0" 
+            src="#black-stone"
+            rotation="0 0 0" 
+            width="1" height="1" 
+            shadow>
+            </a-box>
+
+            <a-box 
+            position="8 -.2 0" 
+            src="#black-stone"
+            rotation="0 0 0" 
+            width="1" height="1" 
+            shadow>
+            </a-box>
+
+        </a-box>
+        
+        <a-box 
+            position="5.1 2.2 -.1" 
+            src="#black-stone"
+            rotation="0 0 45" 
+            scale=".98 1.05 1"
+            width="5" height="5" 
+            shadow>
+        </a-box>
+        
+
+    </a-box>
+
+    
+
+     <!--Walls that block view through roof-->
+
+    <!--Back-->
+    <a-box 
+        position=".4 5.75 -12" 
+        src="#black-stone"
+        rotation="0 0 0" 
+        width="5" height="1.5" 
+        shadow>
+
+        <a-box 
+        position="5 0 0" 
+        src="#black-stone"
+        rotation="0 0 0" 
+        width="5" height="1.5" 
+        shadow>
+        </a-box>
+
+        <a-box 
+        position="10 0 0" 
+        src="#black-stone"
+        rotation="0 0 0" 
+        width="5" height="1.5" 
+        shadow>
+        </a-box>
+
+        <a-box 
+        position="12.95 -.25 0" 
+        src="#black-stone"
+        rotation="0 0 0" 
+        width=".9" height="1" 
+        shadow>
+        </a-box>
+
+    <!--Second Layer-->
+
+        <a-box 
+        position="2.5 1.5 0" 
+        src="#black-stone"
+        rotation="0 0 0" 
+        width="5" height="1.5" 
+        shadow>
+
+            <a-box 
+            position="5 0 0" 
+            src="#black-stone"
+            rotation="0 0 0" 
+            width="5" height="1.5" 
+            shadow>
+            </a-box>
+
+            <a-box 
+            position="-3 -.2 0" 
+            src="#black-stone"
+            rotation="0 0 0" 
+            width="1" height="1" 
+            shadow>
+            </a-box>
+
+            <a-box 
+            position="8 -.2 0" 
+            src="#black-stone"
+            rotation="0 0 0" 
+            width="1" height="1" 
+            shadow>
+            </a-box>
+
+        </a-box>
+        
+        <a-box 
+            position="5.1 2.2 .1" 
+            src="#black-stone"
+            rotation="0 0 45" 
+            scale=".98 1.05 1"
+            width="5" height="5" 
+            shadow>
+        </a-box>
+
+
+        
+        
+
+    </a-box>
+
+
+    <!--Chimney-->
+
+        <!--Fire-->
+        <a-box 
+            position="12.3 .47 -11.9" 
+            rotation="-.005 1.38 .006"
+            scale=".383 .302 1"
+            src="#fire-place"
+            width="5" height="5" 
+            shadow>
+        </a-box>
+
+        <!--Fire Place-->
+
+        <a-box 
+            position="11.5 .58 -11.1" 
+            rotation="-.005 1.38 .006"
+            scale=".092 .26 1"
+            src="#black-stone"
+            width="5" height="5" 
+            shadow>
+
+            <a-box 
+                position="18 0 0" 
+                src="#black-stone"
+                width="5" height="5" 
+                shadow>
+            </a-box>
+
+            <a-box 
+                position="8.8 2.9 -.1" 
+                rotation="90 90 90"
+                scale="4.65 .18 1" 
+                src="#black-stone"
+                width="5" height="7" 
+                shadow>
+
+
+                <a-box 
+                    position="0 0 -18" 
+                    rotation="90 90 90"
+                    scale=".462 -7.3 4"
+                    src="#black-stone"
+                    width="5" height="5" 
+                    shadow>
+                </a-box>
+
+
+            </a-box>
+            
+
+        </a-box>
+
+
+    
+    <!--Pigs-->
+    <a-box 
+        position="3.47 .47 -11.9" 
+        rotation="-.005 1.38 .006"
+        scale=".383 .302 1"
+        src="#pig"
+        width="5" height="5" 
+        shadow>
+    </a-box>
+
+        <a-box 
+            position="6.36 .47 -11.9" 
+            rotation="-.005 1.38 .006"
+            scale=".383 .302 1"
+            src="#pig"
+            width="5" height="5" 
+            shadow>
+        </a-box>
+
+        <a-box 
+            position="9.1 .47 -11.9" 
+            rotation="-.005 1.38 .006"
+            scale=".383 .302 1"
+            src="#pig"
+            width="5" height="5" 
+            shadow>
+        </a-box>
+
+    
+    <!--Wolf-->
+
+        <a-box 
+            position="1.175 .632 .03" 
+            rotation="-.005 1.38 .006"
+            scale=".383 .302 1"
+            src="#wolf"
+            width="5" height="5" 
+            shadow>
+        </a-box>
+
+
+
+    <!--Porky Picture-->
+
+    <!--Picture Frame-->
+
+        <a-box 
+            position="-3.4 1.5 -4.6" 
+            rotation="-.005 1.38 .006"
+            scale=".207 .302 1"
+            src="#picture-frame"
+            width="5" height="5" 
+            shadow>
+
+
+        <!--Picture-->
+        <a-box 
+            position=".4 0 -.01" 
+            rotation="0 0 0"
+            scale="1 .810 .77"
+            src="#porky"
+            width="5" height="5" 
+            shadow>
+        </a-box>
+            
+
+
+        </a-box>
+
+    
+
+        
+
+
+
+
+</a-box>
+
+
+
+
+
+       
+
+
+            
+
+
+        
+        
+
+
+    <!--The Ground-->     
+
+        <a-plane position="0 0 0" 
+            rotation="-90 0 0" 
+            width="200" height="200" 
+            color="#7BC8A4" 
+            src="#grass"
+            shadow>
+        </a-plane>
+
+        
+
+
+
+    </a-scene>
+
+
+
+
+</body>
+</html>
